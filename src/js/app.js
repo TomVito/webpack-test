@@ -1,22 +1,18 @@
-import '../scss/app.scss';
+import "../scss/app.scss";
 
-/* Your JS Code goes here */
+import "./demo.js";
 
-/* Demo JS */
-import './demo.js';
-import $ from 'jquery';
+import $ from "jquery";
 
-import 'slick-carousel';
+import "slick-carousel";
 
-// alert('labas');
-
-$(document).ready(function() {
-  $('.autoplay').slick({
-    slidesToShow: 1,
+$(document).ready(function () {
+  $(".slick-slider").slick({
+    slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    arrows: false,
   });
 });
-
-// alert("labas");
